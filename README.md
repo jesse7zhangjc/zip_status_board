@@ -96,3 +96,25 @@ Zip Status Board Challenge
         ├── serviceWorker.js
         └── services
             └── fetch.js
+
+
+# Requirements and solutions
+* The UI SHALL have show the current health status of a Zip
+    * `Zip Overview` can show status of all zips
+    * On `Zip Overview` Tab, Click on a zip to show detailed status a zip
+
+* The UI SHALL show all maintenance task history of a Zip
+    * On `Zip Overview` Tab, click on a zip to show task history of a zip
+
+* The operator SHALL be able to file maintenance tasks against the Zip
+    * On `Zip Overview` Tab, click on a zip and use `Add New Maintenance Tasks` multiselection and add button to log new tasks
+
+* The operator SHALL be able to mark maintenance tasks as completed/resolved
+    * All `Resolved?` columns are editable.
+
+* An automated tool SHALL be able to perform all the same tasks as an operator
+    * On 'Task Overview', all tasks are listed. 
+    * On 'Task Overview', use `Prob ID` column filter and `Implement All` Button to implement multiple tasks
+
+* An automated tool SHALL be able to check if a given Zip is blocked from flying
+    * `Zip Overview` can show status of all zips
