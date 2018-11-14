@@ -1,4 +1,4 @@
-"""Handle Image Request
+"""Handle Tasks Request
 """
 from json import dumps, loads
 from concurrent.futures import ThreadPoolExecutor
