@@ -19,14 +19,18 @@ Zip Status Board Challenge
 ```
 tornado_server/db_config/mysql_creds.py
 ```
-* cd ./tornado_server
+* ```
+cd ./tornado_server
+```
 * start server
 ```
 python server.py
 ```
 
 ## Front End
-* cd ./react_ui
+* ```
+cd ./react_ui
+```
 * Install all dependencies
     ```
     npm install
