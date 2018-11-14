@@ -29,7 +29,7 @@ Zip Status Board Challenge
     ```
     python server.py
     ```
-* Data in `tornado_server/db_config/data.xlsx will` be imported into MySQL with creds provided
+* Data in `tornado_server/db_config/data.xlsx` will be imported into MySQL with creds provided
 * Server will be running after data imported
 
 ## Front End
