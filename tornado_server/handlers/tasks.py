@@ -118,20 +118,6 @@ class TasksHandler(BaseHandler):
         result = execute_query(query)
         return result
 
-    # @run_on_executor
-    # def implement_a_task(self, task_id, resolve_value):
-    #     """Mark a task as resolved
-    #     """
-
-    #     query = """
-    #         UPDATE maintenance_task
-    #         SET resolved = %(resolve_value)s
-    #         WHERE id = %(task_id)s
-    #     """
-
-    #     result = execute_query(query, task_id=task_id, resolve_value=resolve_value)
-    #     return result
-
     @run_on_executor
     def implement_tasks(self, task_ids, resolve_value):
         """Mark a task as resolved
