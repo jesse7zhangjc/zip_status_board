@@ -1,12 +1,19 @@
-README
+Zip Status Board Challenge
 ===========================
+# Assumptions on Business Level
 
-# Deployment
-## Prerequisite
+* Health Status
+    * If  a zip has any remaining maintenance task, the zip is not healthy.
+    * A zip is unhealthy does not necessarily means that a zip is being blocked to fly. (e.g. the remaining tasks are not blocking flight.)
+* "An automated tool SHALL be able to perform all the same tasks as an operator"
+    * To easily categorize the tasks, I assume all the problems we might be facing have been pre-defined as a list.
+
+# Prerequisite
 * MySQL
 * Python 2
 * Node.js
 
+# Deployment
 ## Back End
 * Update the MySQL credentials in tornado_server/db_config/mysql_creds.py
 * cd ./tornado_server
@@ -25,14 +32,6 @@ python server.py
     npm start
     ```
 
-
-# Assumptions
-
-* Health Status
-    * If  a zip has any remaining maintenance task, the zip is not healthy.
-    * A zip is unhealthy does not necessarily means that a zip is being blocked to fly. (e.g. the remaining tasks are not blocking flight.)
-* "An automated tool SHALL be able to perform all the same tasks as an operator"
-    * To easily categorize the tasks, I assume all the problems we might be facing have been pre-defined as a list.
 
 # Directory Structure
 ## Back End Tornado Server
