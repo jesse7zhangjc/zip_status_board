@@ -26,6 +26,7 @@ python server.py
 ```
 
 ## Front End
+* cd ./react_ui
 * Install all dependencies
     ```
     npm install
@@ -34,7 +35,10 @@ python server.py
     ```
     npm start
     ```
-
+* visit
+    ```
+    http://localhost:3000
+    ```
 
 # Directory Structure
 ## Back End Tornado Server
