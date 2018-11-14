@@ -3,6 +3,7 @@
 from json import dumps
 from concurrent.futures import ThreadPoolExecutor
 from tornado import gen
+from tornado.web import asynchronous
 from tornado.concurrent import run_on_executor
 from handlers import BaseHandler
 from methods.crud_util import get_query_result
@@ -12,6 +13,7 @@ class ZipsHandler(BaseHandler):
     """
     executor = ThreadPoolExecutor(4)
 
+    @asynchronous
     @gen.coroutine
     def get(self):
         """
