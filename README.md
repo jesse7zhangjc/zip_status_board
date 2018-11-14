@@ -15,7 +15,10 @@ Zip Status Board Challenge
 
 # Deployment
 ## Back End
-* Update the MySQL credentials in tornado_server/db_config/mysql_creds.py
+* Update the MySQL credentials at
+```
+tornado_server/db_config/mysql_creds.py
+```
 * cd ./tornado_server
 * start server
 ```
