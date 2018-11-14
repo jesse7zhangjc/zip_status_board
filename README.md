@@ -11,6 +11,11 @@ Zip Status Board Challenge
 # Prerequisite
 * MySQL
 * Python 2
+    * Tornado
+    * TornDB
+    * SQLAlchemy
+    * Pandas (for data import)
+    * etc...
 * Node.js
 
 # Deployment
@@ -19,14 +24,16 @@ Zip Status Board Challenge
     ```
     tornado_server/db_config/mysql_creds.py
     ```
-* ` cd ./tornado_server `
+* ``` cd ./tornado_server ```
 * start server
-```
-python server.py
-```
+    ```
+    python server.py
+    ```
+* Data in `tornado_server/db_config/data.xlsx will` be imported into MySQL with creds provided
+* Server will be running after data imported
 
 ## Front End
-* ` cd ./react_ui `
+* ``` cd ./react_ui ```
 * Install all dependencies
     ```
     npm install

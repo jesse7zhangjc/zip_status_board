@@ -12,11 +12,11 @@ class OverviewSegment extends Component {
         this.refreshData = this.refreshData.bind(this)
 
         this.columns = [
-            { title: 'ID', field: 'zip_id', width: 80 },
-            { title: 'Zip Name', field: 'zip_name', width: 150 },
-            { title: 'Tasks Done', field: 'task_done', width: 150, formatter: 'tickCross' },
-            { title: 'Not Blocked', field: 'non_blocking', width: 150, formatter: 'tickCross' },
-            { title: 'Status', field: 'health', formatter: 'lookup', formatterParams: {
+            { title: 'ID', field: 'zip_id' },
+            { title: 'Zip Name', field: 'zip_name' },
+            { title: 'Tasks Done', field: 'task_done', formatter: 'tickCross' },
+            { title: 'Not Blocked', field: 'non_blocking', formatter: 'tickCross' },
+            { title: 'Status', field: 'health', formatter: 'lookup', width: 350, formatterParams: {
                 0: 'Do NOT fly',
                 1: 'Can fly with remaining tasks',
                 2: 'OK to fly',
