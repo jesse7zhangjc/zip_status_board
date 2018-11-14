@@ -16,21 +16,17 @@ Zip Status Board Challenge
 # Deployment
 ## Back End
 * Update the MySQL credentials at
-```
-tornado_server/db_config/mysql_creds.py
-```
-* ```
-cd ./tornado_server
-```
+    ```
+    tornado_server/db_config/mysql_creds.py
+    ```
+* ` cd ./tornado_server `
 * start server
 ```
 python server.py
 ```
 
 ## Front End
-* ```
-cd ./react_ui
-```
+* ` cd ./react_ui `
 * Install all dependencies
     ```
     npm install
